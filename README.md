@@ -8,19 +8,21 @@ The principle language supported is [Common Workflow Language (CWL)](https://www
 
 ### WRF
 
-- *create run dir*: creates a run directory, from the WRF docker container, for use with WRF and REAL programs
-- *real*: runs the REAL program, to create WRF input files
-- *wrf*: runs the WRF model
+- **create_run_dir**: creates a run directory, from the WRF docker container, for use with WRF and REAL programs
+- **real**: runs the REAL program, to create WRF input files
+- **wrf**: runs the WRF model
 
 ### WPS
 
-- *create metgrid dir*: creates a run directory for the metgrid program
-- *create wps dir*: creates a run directory for general wps use
-- *link_grib_tool*: runs the linking tool for GRIB input files
-- *ungrib*: runs the ungrib tool
-- *metgrid*: runs the metgrid tool
+- **create_metgrid_dir**: creates a run directory for the metgrid program
+- **create_wps_dir**: creates a run directory for general wps use
+- **link_grib_tool**: runs the linking tool for GRIB input files
+- **ungrib**: runs the ungrib tool
+- **metgrid**: runs the metgrid tool
 
+### Met Downloads
 
+- **era5_download**: downloads ERA5 grib files suitable for WPS processing
 
 ## Copyright & Licensing
 
