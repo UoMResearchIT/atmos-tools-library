@@ -3,7 +3,9 @@ class: CommandLineTool
 baseCommand: mpirun
 
 doc: |
-  EMEP chemistry transport model.
+  EMEP chemistry transport model. Note that the configuration for the
+  model will be controlled via a namelist file - make sure the settings
+  provided here match those in the namelist file.
   
   This takes the following inputs:
    - namelist: 

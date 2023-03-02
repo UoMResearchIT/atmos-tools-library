@@ -20,6 +20,11 @@ The principle language supported is [Common Workflow Language (CWL)](https://www
 - **ungrib**: runs the ungrib tool
 - **metgrid**: runs the metgrid tool
 
+### EMEP
+
+- **link_wrf_tool**: runs a linking tool for EMEP input files taken from WRF
+- **emep**: runs the EMEP model
+
 ### Met Downloads
 
 - **era5_download**: downloads ERA5 grib files suitable for WPS processing
