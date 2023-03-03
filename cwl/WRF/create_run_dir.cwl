@@ -27,7 +27,7 @@ inputs:
   script:
     type: string?
     default: |
-      cp -a /usr/local/WRF/run . ; rm run/*exe ; rm run/namelist.input
+      cp -a /WRF-run run ; rm run/namelist.input
     inputBinding:
       position: 1
 
