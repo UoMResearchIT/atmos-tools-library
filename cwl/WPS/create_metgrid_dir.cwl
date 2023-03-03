@@ -12,7 +12,7 @@ doc: |
   The purpose of this script is to enable the use of the run-time input files which
   are bundled with the WRF source code. If you need to modify any of these then we
   recommend extracting the directory using:
-      cwltool cwl/create_metgrid_dir.cwl --generate_metdir
+      cwltool create_metgrid_dir.cwl --generate_metdir
   then modifying the files as needed, and providing the directory as an input 
   to your main workflow. 
 hints:
@@ -28,8 +28,8 @@ inputs:
     type: string?
     default: |
       mkdir ./metgrid
-      cp /WRF-SOURCES/WPS/WPS-src/metgrid/METGRID* metgrid/
-      cp /WRF-SOURCES/WPS/WPS-src/metgrid/gribmap.txt metgrid/
+      cp /WPS-run/metgrid/METGRID* metgrid/
+      cp /WPS-run/metgrid/gribmap.txt metgrid/
     inputBinding:
       position: 1
 
