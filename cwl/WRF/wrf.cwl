@@ -26,7 +26,7 @@ requirements:
       - $(inputs.wrfbdys)
 
 arguments: 
-  - valueFrom: "/usr/local/WRF/main/wrf.exe"
+  - valueFrom: "wrf.exe"
     position: 2
 
 inputs:

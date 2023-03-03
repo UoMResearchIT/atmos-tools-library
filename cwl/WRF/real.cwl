@@ -24,7 +24,7 @@ requirements:
       - $(inputs.metdir.listing)
 
 arguments: 
-  - valueFrom: "/usr/local/WRF/main/real.exe"
+  - valueFrom: "real.exe"
     position: 2
 
 inputs:
