@@ -1,6 +1,6 @@
 cwlVersion: v1.2
 class: CommandLineTool
-baseCommand: "/WRF-SOURCES/WPS/WPS-src/ungrib.exe"
+baseCommand: "ungrib.exe"
 
 doc: |
   Extracts data from supplied GRIB files according to the 

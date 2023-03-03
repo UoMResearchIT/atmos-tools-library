@@ -1,6 +1,6 @@
 cwlVersion: v1.2
 class: CommandLineTool
-baseCommand: "/WRF-SOURCES/WPS/WPS-src/metgrid.exe"
+baseCommand: "metgrid.exe"
 
 doc: |
   Creates meteorological input files for WRF, using
