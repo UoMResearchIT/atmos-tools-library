@@ -24,6 +24,8 @@ requirements:
         entryname: namelist.input
       - $(inputs.wrfinputs)
       - $(inputs.wrfbdys)
+      - $(inputs.wrflowinputs)
+      - $(inputs.wrffddas)
 
 arguments: 
   - valueFrom: "wrf.exe"
@@ -46,6 +48,18 @@ inputs:
     type: 
       type: array
       items: File
+
+  wrflowinputs:
+    type:
+      - "null"
+      - type: array
+        items: File
+
+  wrffddas:
+    type:
+      - "null"
+      - type: array
+        items: File
 
   cores:
     type: int

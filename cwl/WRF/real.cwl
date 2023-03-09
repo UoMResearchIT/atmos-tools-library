@@ -69,4 +69,10 @@ outputs:
       type: array
       items: File
     outputBinding:
-      glob: "wrflowinput_d*"
+      glob: "wrflowinp_d*"
+  output_wrffdda:
+    type:
+      type: array
+      items: File
+    outputBinding:
+      glob: "wrffdda_d*"
