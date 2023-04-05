@@ -8,7 +8,9 @@ doc: |
   
   The geography directory should be passed as the 
   argument `geodir`. In your namelist you will need 
-  to set the value of `geog_data_path` to `geodir`.
+  to set:
+    * `geog_data_path = './geodir/'`
+    * `opt_geogrid_tbl_path = './'`
 
 hints:
   DockerRequirement:
