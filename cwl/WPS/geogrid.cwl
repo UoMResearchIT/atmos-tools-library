@@ -10,7 +10,9 @@ doc: |
   argument `geodir`. In your namelist you will need 
   to set:
     * `geog_data_path = './geodir/'`
-    * `opt_geogrid_tbl_path = './'`
+  If you set the optional geogrid table path it will 
+  need to match the default path:
+    * `opt_geogrid_tbl_path = './geogrid/'`
 
 hints:
   DockerRequirement:
@@ -26,7 +28,7 @@ requirements:
       - entry: $(inputs.namelist)
         entryname: namelist.wps
       - entry: $(inputs.geotable)
-        entryname: GEOGRID.TBL
+        entryname: geogrid/GEOGRID.TBL
 
 
 
