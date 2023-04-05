@@ -23,6 +23,8 @@ requirements:
         entryname: geodir
       - entry: $(inputs.namelist)
         entryname: namelist.wps
+      - entry: $(inputs.geotable)
+        entryname: GEOGRID.TBL
 
 
 
@@ -33,6 +35,9 @@ inputs:
     type: Directory
 
   namelist:
+    type: File
+
+  geotable:
     type: File
 
 outputs:
