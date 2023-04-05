@@ -20,7 +20,7 @@ hints:
     
 requirements:
   LoadListingRequirement:
-    loadListing: deep_listing
+    loadListing: shallow_listing
   InitialWorkDirRequirement:
     listing:
       - entry: $(inputs.geodir)
@@ -29,9 +29,6 @@ requirements:
         entryname: namelist.wps
       - entry: $(inputs.geotable)
         entryname: geogrid/GEOGRID.TBL
-
-
-
 
 inputs:
 
