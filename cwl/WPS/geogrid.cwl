@@ -24,7 +24,7 @@ requirements:
       - entry: $(inputs.namelist)
         entryname: namelist.wps
       - entry: $(inputs.geotable)
-        entryname: GEOGRID.TBL
+        entryname: geogrid/GEOGRID.TBL
 
 
 
