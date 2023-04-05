@@ -8,7 +8,7 @@ doc: |
   
   The geography directory should be passed as the 
   argument `geodir`. In your namelist you will need 
-  to set the path to this as `geodir`.
+  to set the value of `geog_data_path` to `geodir`.
 
 hints:
   DockerRequirement:
@@ -34,9 +34,6 @@ inputs:
 
   namelist:
     type: File
-
-  metdir:
-    type: Directory
 
 outputs:
   logfile:
