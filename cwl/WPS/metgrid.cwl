@@ -16,7 +16,7 @@ hints:
     
 requirements:
   LoadListingRequirement:
-    loadListing: deep_listing
+    loadListing: shallow_listing
   InitialWorkDirRequirement:
     listing:
       - entry: $(inputs.geofile)
@@ -57,7 +57,7 @@ outputs:
       type: array
       items: File
     outputBinding:
-      glob: "metgrid*log"
+      glob: "metgrid.*log"
   metfiles:
     type:
       type: array
