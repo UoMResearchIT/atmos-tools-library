@@ -25,7 +25,7 @@ requirements:
         entryname: namelist.wps
       - entry: $(inputs.ungribbed_files_a)
       - entry: $(inputs.ungribbed_files_b)
-      - entry: $(inputs.metdir)
+      - entry: $(inputs.metdir.listing)
 
 
 
