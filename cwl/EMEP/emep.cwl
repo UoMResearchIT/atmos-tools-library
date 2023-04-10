@@ -75,9 +75,10 @@ inputs:
     type: Directory
 
   chembdys:
-    type: 
-      type: array
-      items: File?
+    type:
+      - "null"
+      - type: array
+        items: File
 
   cores:
     type: int
