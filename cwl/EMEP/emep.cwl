@@ -100,7 +100,7 @@ outputs:
       type: array
       items: File
     outputBinding:
-      glob: "*[txt|out]"
+      glob: "*.[txt|out]"
   output_files:
     type:
       type: array
