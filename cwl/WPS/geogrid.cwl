@@ -48,7 +48,7 @@ outputs:
       items: File
     outputBinding:
       glob: "geogrid*log"
-  metfiles:
+  geofiles:
     type:
       type: array
       items: File
