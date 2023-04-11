@@ -25,7 +25,7 @@ hints:
     packages:
       cdsapi:
         version: 
-          - 0.5.1
+          - 0.6.1
         specs:
           - https://anaconda.org/conda-forge/cdsapi
   
