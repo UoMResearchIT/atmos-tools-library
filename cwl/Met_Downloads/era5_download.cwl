@@ -21,13 +21,8 @@ doc: |
   the enclosed python script template can be modified by hand.
 
 hints:
-  SoftwareRequirement:
-    packages:
-      cdsapi:
-        version: 
-          - 0.6.1
-        specs:
-          - https://anaconda.org/conda-forge/cdsapi
+  DockerRequirement:
+    dockerPull: ghcr.io/uomresearchit/python-cdsapi:latest
   
 requirements:
   InitialWorkDirRequirement:
