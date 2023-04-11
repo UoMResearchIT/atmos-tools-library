@@ -25,6 +25,8 @@ hints:
     dockerPull: ghcr.io/uomresearchit/python-cdsapi:latest
   
 requirements:
+  NetworkAccess:
+    networkAccess: True
   InitialWorkDirRequirement:
     listing:
       - entry: $(inputs.cdskey)
