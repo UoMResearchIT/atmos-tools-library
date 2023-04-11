@@ -23,6 +23,9 @@ doc: |
 hints:
   DockerRequirement:
     dockerPull: ghcr.io/uomresearchit/python-cdsapi:latest
+  EnvVarRequirement:
+    envDef:
+      HTTPS_PROXY: $(inputs.https_proxy)
   
 requirements:
   NetworkAccess:
@@ -125,6 +128,9 @@ requirements:
               idate = idate + timedelta(days=1) 
           
 inputs:
+  https_proxy:
+    type: string
+    default: ""
   cdskey: 
     type: File
     default:
