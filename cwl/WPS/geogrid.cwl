@@ -42,7 +42,7 @@ inputs:
     type: File
 
 outputs:
-  logfile:
+  logfiles:
     type:
       type: array
       items: File
