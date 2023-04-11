@@ -89,8 +89,8 @@ requirements:
                           '00:00', '06:00', '12:00', '18:00',
                       ],
                       'area': [
-                          $(inputs.upper_latitude), $(inputs.left_longitude), 
-                          $(inputs.lower_latitude), $(inputs.right_longitude),
+                          $(inputs.north_latitude), $(inputs.west_longitude), 
+                          $(inputs.south_latitude), $(inputs.east_longitude),
                       ],
                       'grid': [0.5, 0.5],
                   },
@@ -118,8 +118,8 @@ requirements:
                           '00:00', '06:00', '12:00', '18:00',
                       ],
                       'area': [
-                          $(inputs.upper_latitude), $(inputs.left_longitude), 
-                          $(inputs.lower_latitude), $(inputs.right_longitude),
+                          $(inputs.north_latitude), $(inputs.west_longitude), 
+                          $(inputs.south_latitude), $(inputs.east_longitude),
                       ],
                   },
                   "surface_"+strdate+".grib")
