@@ -13,7 +13,9 @@ doc: |
      - will be renamed config_emep.nml
    - inputdir: 
      - directory containing general input files
-     - should be the path defined in DataPath(1) of namelist
+     - this directory will be renamed as input
+     - make sure to use 'input' as the string for DataPath(1)
+       in the namelist
    - metdir: 
      - directory containing meteorology input files
      - should be the path defined in meteo of namelist
@@ -53,7 +55,8 @@ requirements:
     loadListing: shallow_listing
   InitialWorkDirRequirement:
     listing:
-      - $(inputs.inputdir)
+      - entry: $(inputs.inputdir)
+        entryname: input
       - entry: $(inputs.namelist)
         entryname: config_emep.nml
       - $(inputs.metdir)
