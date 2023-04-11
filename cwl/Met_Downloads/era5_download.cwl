@@ -12,6 +12,8 @@ doc: |
     - start/end year/month/day: variables defining start and end dates 
       (can be same day)
     - latitude / longitude edges for domain
+  Optional inputs:
+    - https_proxy: proxy information (if required), in format: <address>:<port>
   
   Outputs:
     - surface level data (6 hourly, each day, full resolution)
@@ -129,13 +131,10 @@ requirements:
           
 inputs:
   https_proxy:
-    type: string
+    type: string?
     default: ""
   cdskey: 
     type: File
-    default:
-      class: File
-      location: .cdsapirc
   start_year: int
   start_month: int
   start_day: int
