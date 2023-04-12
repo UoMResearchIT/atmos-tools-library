@@ -16,8 +16,7 @@ requirements:
     loadListing: shallow_listing
   InitialWorkDirRequirement:
     listing:
-      - entry: $(inputs.geofile)
-        entryname: geo_em.d01.nc
+      - entry: $(inputs.geofiles)
       - entry: $(inputs.namelist)
         entryname: namelist.wps
       - entry: $(inputs.ungribbed_files_a)
@@ -29,8 +28,8 @@ requirements:
 
 inputs:
 
-  geofile:
-    type: File
+  geofiles:
+    type: File[]
 
   namelist:
     type: File
