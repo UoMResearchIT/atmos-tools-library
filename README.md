@@ -29,6 +29,11 @@ The principle language supported is [Common Workflow Language (CWL)](https://www
 
 - **era5_download**: downloads ERA5 grib files suitable for WPS processing
 
+### general
+
+- **create_dir_from_filelist**: create directory, with a defined name, from a list of files
+- **extract_filelist_from_dir**: generates a list of files from a given directory
+
 ## Copyright & Licensing
 
 This software has been developed by the [Research IT](https://research-it.manchester.ac.uk/) 
