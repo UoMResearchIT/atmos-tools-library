@@ -21,7 +21,7 @@ requirements:
       - $(inputs.rundir.listing)
       - entry: $(inputs.namelist)
         entryname: namelist.input
-      - $(inputs.metdir.listing)
+      - $(inputs.metfiles)
 
 arguments: 
   - valueFrom: "real.exe"
@@ -35,8 +35,8 @@ inputs:
   namelist:
     type: File
 
-  metdir:
-    type: Directory
+  metfiles:
+    type: File[]
 
   cores:
     type: int
