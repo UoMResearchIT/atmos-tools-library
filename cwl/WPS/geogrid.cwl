@@ -16,7 +16,7 @@ doc: |
 
 hints:
   DockerRequirement:
-    dockerPull: ghcr.io/uomresearchit/wrf-wps:latest
+    dockerPull: ghcr.io/uomresearchit/wrf-wps:3.9.1.1
     
 requirements:
   LoadListingRequirement:
