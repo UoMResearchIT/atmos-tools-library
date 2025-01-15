@@ -14,11 +14,18 @@ hints:
     DockerRequirement:
         dockerPull: "ghcr.io/uomresearchit/maqs-analyser:latest"
 inputs:
-    # Define the input file that will be provided by the user
-    input_file:
+    # Define the runinfo file that will be provided by the user (required)
+    run_info:
         type: File
         inputBinding:
             position: 1
+            prefix: --run-info
+    # Define the config file that will be provided by the user (optional)
+    config:
+        type: File
+        inputBinding:
+            position: 2
+            prefix: --config
 outputs:
     # Define the output file that will be produced by the script inside the Docker container
     output_file:
@@ -30,9 +37,11 @@ requirements:
     InitialWorkDirRequirement:
         listing:
             # Ensure the input file is available in the working directory
-            - entryname: input_file
-              entry: $(inputs.input_file)
+            - entryname: run_info
+              entry: $(inputs.run_info)
 arguments:
-    # Pass the contents of the input file as an argument to the script
-    - valueFrom: $(inputs.input_file.contents)
-      position: 2
+  # Pass the contents of the input file as an argument to the script
+  - valueFrom: $(inputs.run_info.contents)
+    position: 1
+  - valueFrom: $(inputs.config.contents)
+    position: 2
