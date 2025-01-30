@@ -34,6 +34,7 @@ outputs:
             glob: output.txt
 
 requirements:
+    InlineJavascriptRequirement: {}
     InitialWorkDirRequirement:
         listing:
             # Ensure the input file is available in the working directory
@@ -41,7 +42,7 @@ requirements:
               entry: $(inputs.run_info)
 arguments:
   # Pass the contents of the input file as an argument to the script
-  - valueFrom: $(inputs.run_info.contents)
+  - valueFrom: $(inputs.run_info.path)
     position: 1
-  - valueFrom: $(inputs.config.contents)
+  - valueFrom: $(inputs.config.path)
     position: 2
