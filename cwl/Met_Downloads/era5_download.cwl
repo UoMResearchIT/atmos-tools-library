@@ -66,7 +66,8 @@ requirements:
                   "reanalysis-era5-pressure-levels",
                   {
                       'product_type': 'reanalysis',
-                      'format': 'grib',
+                      'data_format': 'grib',
+                      'download_format': 'unarchived',
                       'year': stryear,
                       'month': strmonth,
                       'day': strday,
@@ -103,7 +104,8 @@ requirements:
                   'reanalysis-era5-single-levels',
                   {
                       'product_type': 'reanalysis',
-                      'format': 'grib',
+                      'data_format': 'grib',
+                      'download_format': 'unarchived',
                       'year': stryear,
                       'month': strmonth,
                       'day': strday,
